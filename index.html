@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alison<3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<!-- ESTILOS SOLO PARA EL LOGIN -->
+  <style>
+    .login-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      max-width: 90%;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-container h2 {
+      color: #d63384;
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .login-form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .login-form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #d63384;
+      font-weight: 500;
+      font-size: 18px;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .login-form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #f8d7da;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login-form-group input:focus {
+      outline: none;
+      border-color: #d63384;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #ff9a9e 0%, #d63384 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      margin-top: 10px;
+      font-family: 'Dancing Script', cursive;
+
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .login-error-message {
+      color: #dc3545;
+      margin-top: 10px;
+      display: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login-demo-info {
+      margin-top: 20px;
+      color: #6c757d;
+      font-size: 14px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .main-page-content {
+      display: none;
+    }
+
+    .logout-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(214, 51, 132, 0.8);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      z-index: 1000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body>
+   <!-- PANTALLA DE LOGIN -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-container">
+      <h2>Bienvenida 💖</h2>  
+      <form id="loginForm">
+        <div class="login-form-group">
+          <label for="username">¿Quien dijo el primer Te amo?</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="login-form-group">
+          <label for="password">¿Como es nuestro "símbolo"?</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit" class="login-btn">Entrar 💕</button>
+        
+        <div id="errorMessage" class="login-error-message">
+          Credenciales incorrectas
+        </div>
+      </form>
+    </div>
+  </div>
+  <header>
+    <h1 class="inicio">Para mi amor...</h1>
+    <img src="./img/ramo.png" class="ramo" alt="ramo">
+<img src="./img/flor.png" class="flor" alt="flor">
+  </header>
+  <main>
+    <p>De la mano, tú y yo, hoy, mañana, para siempre.</p><br>
+    <img src="./img/manos.jpeg" class="imgmanos" alt="manos" width="200px">
+  </main>
+  <div class="piedepagina">
+    <p>Ali, te dedico unas palabras, esta vez de una forma distinta al formato de siempre (las cartas de papel a mano), pero espero que tenga similar valor.<br>
+    Quiero agradecerte por la persona que sos conmigo, por aguantarme, por darme tu amor, tu hermoso amor, por siempre estar a mi lado a pesar de todo, le pido a Dios que siempre sea así, porque te quiero para el resto de nuestras vidas, con nuestras idas y vueltas, pero siempre juntos, de la mano.<br>
+    Y es que en realidad sobran las palabras cuando se trata de vos mi amor, sos lo que mas quiero en el mundo, te volviste tan importante para mi, que nunca lo imagine así, pero me encanta, te siento tan mía, me siento tan tuyo, siento esto tan real, tan nuestro, que lo veo inquebrantable. Nos veo logrando esas cosas que siempre hablamos, compartiendo tantos momentos lindos, y amo eso, por eso y mil cosas más, te amo mi vida.
+    </p>
+    <img src="./img/cor.png" class="corazon" alt="corazon" width="20px">
+  </div><br>
+<footer class="canciones">
+  <ul class="lista">
+    <li><a href="https://www.youtube.com/watch?v=s7vT3qUG7sI">Escucha</a></li>
+    <li><a href="https://www.youtube.com/watch?v=cv1e9RnlEhc">estas</a></li>
+    <li><a href="https://www.youtube.com/watch?v=po1YF1p31-A">canciones</a></li>
+  </ul>
+</footer>
+<script>
+    // Credenciales válidas
+    const validUsers = {
+      "alison": "A^2",
+    };
+
+    // Verificar si ya hay sesión al cargar
+    window.onload = function() {
+      if (sessionStorage.getItem('userLoggedIn') === 'true') {
+        showMainContent();
+      }
+    };
+
+    // Manejar el login
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      if (validUsers[username] && validUsers[username] === password) {
+        // Login exitoso
+        sessionStorage.setItem('userLoggedIn', 'true');
+        sessionStorage.setItem('username', username);
+        showMainContent();
+      } else {
+        // Login fallido
+        document.getElementById('errorMessage').style.display = 'block';
+      }
+    });
+
+    // Mostrar contenido principal
+    function showMainContent() {
+      document.getElementById('loginScreen').style.display = 'none';
+      document.getElementById('mainContent').style.display = 'block';
+    }
+
+    // Cerrar sesión
+    function logout() {
+      sessionStorage.removeItem('userLoggedIn');
+      sessionStorage.removeItem('username');
+      document.getElementById('loginScreen').style.display = 'flex';
+      document.getElementById('mainContent').style.display = 'none';
+      document.getElementById('errorMessage').style.display = 'none';
+      document.getElementById('loginForm').reset();
+    }
+  </script>
+</body>
+</html>

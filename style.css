@@ -1,0 +1,89 @@
+body{
+  background-color: #d2d7bf;
+}
+.meow-script-regular {
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.inicio{
+  font-family: "Meow Script", cursive;
+}
+header{
+  background-color: #aabd91;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+main{
+  background-color: #d2d7bf;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.imgmanos{
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.imgmanos:hover{
+  transform: scale(1.2);
+}
+.piedepagina{
+  background-color: #aabd91;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.ramo{
+  width: 150px;
+position: absolute;
+top: 62px;
+right: 0px;
+}
+.flor{
+  width: 150px;
+position: absolute;
+top: 30px;
+left: 8px;
+}
+.canciones{
+  background-color: #aca4d8;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family:"Meow Script", cursive;
+}
+a{
+  color: #111000;
+}
+a:hover{
+  color: #d2d7bf;
+}
+ .canciones {
+      text-align: center;
+      padding: 2rem;
+    }
+.lista {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .lista a {
+      color: #d63384;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #d63384;
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+      .lista a:hover {
+      background: #d63384;
+      color: white;
+    }
